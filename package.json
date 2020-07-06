@@ -1,0 +1,27 @@
+{
+  "name": "demoapp",
+  "version": "1.0.0",
+  "description": "\"This is the demo app for testing\"",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux --dir",
+    "dist:linux": "electron-builder --linux"
+  },
+  "keywords": [
+    "electron"
+  ],
+  "author": "Vaibhav Gole <vaibhavgoley3@gmail.com",
+  "license": "ISC",
+  "build": {
+    "appId": "com.my.app.id",
+    "linux": {
+      "category": "Utility",
+      "target": [ "deb" ],
+      "maintainer": "Vaibhav Gole <vaibhavgoley3@gmail.com"
+    }
+  },
+  "devDependencies": {
+    "electron": "^9.0.0"
+  }
+}
